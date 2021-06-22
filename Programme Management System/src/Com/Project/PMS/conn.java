@@ -9,8 +9,7 @@ public class conn {
     Statement s;
     public conn(){
         try{
-            Class.forName("com.mysql.jdbc.Driver");
-            c = DriverManager.getConnection("jdbc:mysql://localhost/pmsdb","root","");
+            c = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","jadmin","India123");
             s = c.createStatement();
 
         }
